@@ -1,0 +1,63 @@
+<!-- activity_main.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="25sp"
+      android:text="LIST COMPLAINT "
+      android:textAlignment="center"
+      android:fontFamily="@font/poppins_extrabold"
+      android:layout_marginTop="20dp"
+      android:layout_marginBottom="20dp"
+      android:textStyle="bold"/>
+
+  <!-- CardView untuk Menampilkan Data -->
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:padding="5dp"
+      app:cardCornerRadius="8dp">
+
+    <!-- ListView untuk Menampilkan Data -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="3dp"
+        />
+
+
+  </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <!-- FloatingActionButton -->
+
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/fab_tambah"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentEnd="true"
+          android:layout_gravity="bottom|end"
+          android:layout_margin="16dp"
+          android:src="@drawable/baseline_add_24"
+          app:backgroundTint="#FF4081"
+          app:fabSize="normal"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
